@@ -1,0 +1,12 @@
+.navbox {
+  padding: 20px;
+  background-color: rgba(214, 23, 211, 0.089);
+  margin-top: 25px;
+  z-index: -100;
+}
+
+@media (max-width: 600px) {
+  .navbox {
+    padding: 10px;
+  }
+}

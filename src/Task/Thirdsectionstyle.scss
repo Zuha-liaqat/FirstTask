@@ -1,0 +1,25 @@
+.mainbox2 {
+  width: 100%;
+  padding: 16px;
+  margin-top: 60px;
+  z-index: -100;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.textbox2 {
+  margin-top: 20px;
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .textbox2 {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
