@@ -2,7 +2,7 @@ import React from 'react';
 import './Firstsectionstyle.scss';
 import Box from '@mui/material/Box';
 import { Typography, Grid } from '@mui/material';
-import picc from '../asset/ggg.png';
+import picc from '../asset/Group.png';
 
 function Firstsection() {
   return (
