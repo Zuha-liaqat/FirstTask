@@ -16,6 +16,9 @@ function Row() {
         <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Seasonal</Button>
         <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Plant based</Button>
         <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Fusion</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Bhorta</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Appetizer</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Desserts and Drinks</Button>
       </Box>
     </Box>
   );

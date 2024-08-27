@@ -3,25 +3,28 @@
   padding: 20px;
   margin-top: 2px;
   z-index: 1; 
-  width: 700px;
-  height: 150px; 
+  width: 70%;
+  height: 70px; 
+  justify-content: center;
   margin-left: auto; 
   margin-right: auto; 
   cursor: pointer;
+  overflow: hidden;
+  display: flex;
 }
 
 .content {
   display: inline-block; 
   justify-content: space-evenly; 
   align-items: center;
-  flex-wrap: wrap; 
+  white-space: nowrap; 
   padding: 20px;
   z-index: 1; 
-  width:680px;
-  white-space: nowrap; 
+  width:830px;
+  height: 20px;
   scrollbar-width: none;
   overflow-y:hidden;
-  overflow-x:scroll;
+  overflow-x:auto;
   
 }
 
