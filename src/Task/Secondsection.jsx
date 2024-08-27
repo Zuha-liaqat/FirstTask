@@ -2,14 +2,14 @@ import React from 'react';
 import './Secondsectionstyle.scss';
 import Box from '@mui/material/Box';
 import { Typography, Grid ,Divider} from '@mui/material';
-import jack from '../asset/jackfruit.jpg';
+import pic from '../asset/image.png';
 
 function Secondsection() {
   return (
     <Box className="mainbox">
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
-          <img src={jack} className="image" alt="Jack Fruit Tacos" />
+          <img src={pic} className="image" alt="Jack Fruit Tacos" />
         </Grid>
 
         <Grid item xs={12} sm={6}>

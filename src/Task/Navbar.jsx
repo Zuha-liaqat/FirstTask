@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import {Button,Typography, IconButton,Divider} from '@mui/material';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from '../asset/logo2.png'; 
+import logo from '../asset/bird.png'; 
 import  './Navbarstyle.scss'
 
 
@@ -34,28 +34,31 @@ function Navbar() {
     <Box >
    
       <Box className="navbar">
-        
+        <Box sx={{display:"flex",alignContent:"center",alignItems:"center",fontWeight:"bold"}}>
+        <Typography sx={{fontSize:"25px",color:"#2F75E6",fontWeight:600}}>Neerob</Typography>
         <IconButton>
-        <img src={logo} alt="logo" width={100} height={50} /> 
+        <img src={logo} alt="logo" width={30} height={30} className='image2'/> 
         </IconButton>
+        </Box>
+       
 
        
         <Box>
-          <Button id="btn">Home</Button>
-          <Button sx={{color:"purple",':hover':{textDecoration:"underline",textUnderlineOffset:'28px'}}}>Menu</Button>
-          <Button sx={{color:"purple",':hover':{textDecoration:"underline",textUnderlineOffset:'28px'}}}>Schedule</Button>
-          <Button sx={{color:"purple",':hover':{textDecoration:"underline",textUnderlineOffset:'28px'}}}>Packages</Button>
-          <Button sx={{color:"purple",':hover':{textDecoration:"underline",textUnderlineOffset:'28px'}}}>Catering</Button>
-          <Button sx={{color:"purple",':hover':{textDecoration:"underline",textUnderlineOffset:'28px'}}}>About</Button>
+          <Button  sx={{color:"black",textTransform: "capitalize",':hover':{color:"#2F75E6",textDecorationColor:"blue",textDecoration:"underline",textUnderlineOffset:'20px',}}}>Home</Button>
+          <Button  id="btn">Menu</Button>
+          <Button sx={{color:"black",textTransform: "capitalize",':hover':{textDecoration:"underline",textUnderlineOffset:'20px',color:"#2F75E6",textDecorationColor:"blue"}}}>Schedule</Button>
+          <Button sx={{color:"black",textTransform: "capitalize",':hover':{textDecoration:"underline",textUnderlineOffset:'20px',color:"#2F75E6",textDecorationColor:"blue"}}}>Packages</Button>
+          <Button sx={{color:"black",textTransform: "capitalize",':hover':{textDecoration:"underline",textUnderlineOffset:'20px',color:"#2F75E6",textDecorationColor:"blue"}}}>Catering</Button>
+          <Button sx={{color:"black",textTransform: "capitalize",':hover':{textDecoration:"underline",textUnderlineOffset:'20px',color:"#2F75E6",textDecorationColor:"blue"}}}>About</Button>
         </Box>
 
         <Box sx={{marginRight:"6px"}}>
-        <Button sx={{color:"white",backgroundColor:"purple",':hover':{backgroundColor:"grey"}}}>Login</Button>
-        <Button sx={{border:"1px solid purple",marginLeft:"5px",color:"purple"}}>Signup</Button>
+        <Button variant="outlined" sx={{color:"#2F75E6",textTransform: "capitalize",':hover':{backgroundColor:"lightblue" ,color:"white"}}}>Reservation</Button>
+        <Button variant="outlined" sx={{marginLeft:"5px",textTransform: "capitalize",color:"white",backgroundColor:"#2F75E6",':hover':{color:"black"}}}>Order Now</Button>
         </Box>
        
       </Box>
-      <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "100%" ,marginTop:"0.5px"}} />
+      <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "100%" ,marginTop:"5px"}} />
     </Box>
    
     </>

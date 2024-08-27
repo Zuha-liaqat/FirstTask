@@ -3,13 +3,22 @@
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-  background-color: rgb(230, 99, 227);
+  background: #2F75E6;
   z-index: -100;
 }
 .contact-info {
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+.image2{
+  position:absolute;
+  bottom:30%;
+  left:-15px;
+  right:110;
+  top:-30;
+  
+  
 }
 .icon{
   color: white;
@@ -20,21 +29,25 @@
 }
 .navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: white;
   color: black;
   text-align: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 #btn{
   text-decoration: underline;
-  text-underline-offset: 28px;
-  color: purple;
+  text-underline-offset: 20px;
+  color: #2F75E6;
+  text-transform: capitalize;
 }
 @media(max-width:600px){
   .navbar{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

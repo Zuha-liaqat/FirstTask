@@ -1,40 +1,22 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { Button, Grid } from '@mui/material';
+import { Button } from '@mui/material';
 import './Rowstyle.scss';
 
 function Row() {
   return (
     <Box className="navbox">
-      <Grid container spacing={2} justifyContent="center">
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button sx={{color:"white",backgroundColor:"purple", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Popular Items</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Vegetarian</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Non-Veg</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Seafood</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button  sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Biryani & Rice-Based</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button  sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Curry</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button  sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Seasonal</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Plant-based</Button>
-        </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
-          <Button  sx={{color:"black", ':hover':{textDecoration:'underline', color:'purple'}, width: '100%'}}>Fusion</Button>
-        </Grid>
-      </Grid>
+      <Box className="content">
+        <Button variant="contained" sx={{ color: "white", textTransform: "capitalize", ':hover': { color: "#2F75E6", textDecorationColor: "#2F75E6", textDecoration: "underline", textUnderlineOffset: '20px' } }}>Popular Items</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Vegetarian</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Non-Veg</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Seafood</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Biryani & Rice-based</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Curry</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Seasonal</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Plant based</Button>
+        <Button sx={{ color: "#2F75E6", textTransform: "capitalize", ':hover': { textDecoration: "underline", textUnderlineOffset: '20px', color: "#2F75E6", textDecorationColor: "#2F75E6" } }}>Fusion</Button>
+      </Box>
     </Box>
   );
 }

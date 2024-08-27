@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { Button, Typography, Grid, Divider, IconButton } from '@mui/material';
+import { Button, Typography, Grid, Divider, IconButton,TextField } from '@mui/material';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -16,14 +16,14 @@ function Footer() {
             <Typography sx={{ color: "white", fontSize: "20px" }}>
               Come say <i>hello</i>
             </Typography>
-            <Button sx={{ backgroundColor: "white", color: "black", fontSize: "10px", fontWeight: "600" }}>
+            <Button sx={{ backgroundColor: "white",textTransform: "capitalize", color:" #2F75E6", fontSize: "10px",borderRadius:"2px"}}>
               View weekly schedule
             </Button>
           </Box>
         </Grid>
         
         
-          <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "90%" }} />
+          <Divider sx={{ my: 2, borderColor: '#F9EFE633', borderWidth: 0.5, width: "85%" }} />
        
         
         
@@ -36,6 +36,13 @@ function Footer() {
                 <InstagramIcon  className='iconcolor'/>
                 <TwitterIcon className='iconcolor'/>
               </IconButton>
+              <Typography sx={{marginTop:"10px",marginBottom:"10px",marginLeft:"70px",color:"white",fontSize:"12px"}}>Sign up for our newsletter</Typography>
+              <Box>
+              <TextField sx={{width:"50%",height: 36, '& .MuiInputBase-root': { height: 36 },marginLeft:"70px" ,border:"1px solid white"}}></TextField>
+              <Button sx={{backgroundColor: "white", width:"20%", color:" #2F75E6", fontSize: "10px", fontWeight: "600" ,borderRadius:"1px",height:38}}>Sign up</Button>
+              </Box>
+              
+              
             </Box>
           </Grid>
           
@@ -64,8 +71,8 @@ function Footer() {
         
         <Grid item xs={12} className="Thirdbox">
           <Box>
-            <Typography sx={{ color: "white", fontSize: "15px", align:"left"}}>
-              Example 2023. All Rights Reserved.
+            <Typography sx={{ color: "white", fontSize: "12px", align:"left"}}>
+            © Example 2023. All Rights Reserved
             </Typography>
           </Box>
         </Grid>
