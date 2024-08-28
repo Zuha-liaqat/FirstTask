@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { Button, Typography, Grid, Divider, IconButton,TextField } from '@mui/material';
+import { Button, Typography, Grid, Divider, IconButton,TextField,InputAdornment } from '@mui/material';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -16,7 +16,7 @@ function Footer() {
             <Typography sx={{ color: "white", fontSize: "20px" }}>
               Come say <i>hello</i>
             </Typography>
-            <Button sx={{ backgroundColor: "white",textTransform: "capitalize", color:" #2F75E6", fontSize: "10px",borderRadius:"2px"}}>
+            <Button sx={{ backgroundColor: "white",fontWeight:"600",textTransform: "capitalize", color:" #2F75E6", fontSize: "10px",borderRadius:"2px",':hover':{backgroundColor:"blue" ,color:"white"}}}>
               View weekly schedule
             </Button>
           </Box>
@@ -27,40 +27,58 @@ function Footer() {
        
         
         
-        <Grid container item xs={12} spacing={2} justifyContent="left">
+        <Grid container item xs={12} md={9} spacing={2} justifyContent="left" >
           <Grid item xs={12} sm={6} md={4}>
-            <Box className="rectangle">
-              <Typography sx={{ color: "white",marginLeft:"70px" }}>Logo</Typography>
-              <IconButton sx={{marginRight:"165px" }}>
+            <Box className="rectangle2">
+              <Typography sx={{ color: "white"}}>Logo</Typography>
+              <IconButton class="iconbtn">
                 <FacebookRoundedIcon  className='iconcolor'/>
                 <InstagramIcon  className='iconcolor'/>
                 <TwitterIcon className='iconcolor'/>
               </IconButton>
-              <Typography sx={{marginTop:"10px",marginBottom:"10px",marginLeft:"70px",color:"white",fontSize:"12px"}}>Sign up for our newsletter</Typography>
+              <Typography sx={{marginTop:"10px",marginBottom:"10px",color:"white",fontSize:"12px"}}>Sign up for our newsletter</Typography>
               <Box>
-              <TextField sx={{width:"50%",height: 36, '& .MuiInputBase-root': { height: 36 },marginLeft:"70px" ,border:"1px solid white"}}></TextField>
-              <Button sx={{backgroundColor: "white", width:"20%", color:" #2F75E6", fontSize: "10px", fontWeight: "600" ,borderRadius:"1px",height:38}}>Sign up</Button>
+              <TextField sx={{'& .MuiInputBase-root': {height: 30,paddingRight: 0,},width: "70%",border: "1px solid white",borderRadius:"2px"}}
+              variant="outlined"
+              size="small"
+              InputProps={{
+              endAdornment: (
+             <InputAdornment position="end" sx={{ marginRight: 0 }}>
+             <Button
+             variant="contained"
+             color="primary"
+             size="small"
+             sx={{fontSize: '12px',fontWeight:"600",textTransform:"capitalize",backgroundColor: "white",color:"#2F75E6",borderRadius:"2px",padding: 0,  minWidth: "auto", width: "80px", height:"30px"
+             }}>
+                 Sign Up
+             </Button>
+            </InputAdornment>
+             ),
+            }}/>
+
               </Box>
               
+    
               
             </Box>
           </Grid>
           
-          <Grid item xs={6} sm={3} md={2}>
+          <Grid item xs={6} sm={3} md={2} >
             <Box className="rectangle">
               <Typography className='rectangletext'>Menu</Typography>
               <Typography className='rectangletext'>Schedule</Typography>
             </Box>
           </Grid>
           
-          <Grid item xs={6} sm={3} md={2}>
+          <Grid item xs={6} sm={3} md={2}  >
             <Box className="rectangle">
               <Typography className='rectangletext'>Contact</Typography>
               <Typography className='rectangletext'>Privacy policy</Typography>
             </Box>
           </Grid>
           
-          <Grid item xs={6} sm={3} md={2}>
+          
+          <Grid item xs={6} sm={3} md={2} >
             <Box className="rectangle">
               <Typography className='rectangletext'>About</Typography>
               <Typography className='rectangletext'>Catering</Typography>
