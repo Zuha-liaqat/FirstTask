@@ -1,0 +1,58 @@
+
+.navbox {
+  padding: 20px;
+  margin-top: 20px;
+  width: 65%;
+  height: 60px; 
+  justify-content: center;
+  margin-left: auto; 
+  margin-right: auto; 
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+}
+
+.content {
+ 
+  justify-content: space-evenly; 
+  white-space: nowrap; 
+  width:900px;
+  height: 50px;
+  overflow-y:hidden;
+  overflow-x:auto;
+  &::-webkit-scrollbar {
+    height: 3px;
+    width:30px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #fff; 
+    border-radius: 15px; 
+   
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #2F75E6; 
+    border-radius: 15px; 
+    
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none; 
+   
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .navbox {
+    padding: 10px;
+    width: 75%; 
+    
+
+  }
+  .content {
+    display: block; 
+    text-align: center; 
+  }
+}

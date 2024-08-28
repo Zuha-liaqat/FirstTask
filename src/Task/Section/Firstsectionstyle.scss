@@ -1,19 +1,22 @@
 .text {
   margin-top: 20px;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
   text-align: center;
-
-}
-.border{
-  border:1px solid black;
-}
-.image4{
-  position: absolute;
-  right:-140px;
-  top:130px;
-  width:42%;
-  height:70vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; 
+  margin-right: auto; 
   
+}
+
+.image4{
+  position: fixed;
+  left: 890px;
+  top:130px;
+  width:35%;
+  height:70vh;
+  right: 0px;
   
 }
 

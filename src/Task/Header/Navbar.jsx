@@ -3,8 +3,8 @@ import Box from '@mui/material/Box'
 import {Button,Typography, IconButton,Divider} from '@mui/material';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
-import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded';
-import logo from '../asset/bird.png'; 
+import logo from '../../asset/bird.png'; 
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import  './Navbarstyle.scss'
 
 
@@ -53,11 +53,23 @@ function Navbar() {
           <Button sx={{color:"black",textTransform: "capitalize",':hover':{textDecoration:"underline",textUnderlineOffset:'20px',color:"#2F75E6",textDecorationColor:"blue"}}}>About</Button>
         </Box>
 
-        <Box sx={{marginRight:"6px"}}>
-        <Button variant="outlined" sx={{color:"#2F75E6",textTransform: "capitalize",':hover':{backgroundColor:"lightblue" ,color:"white"}}}>Reservation</Button>
-        <Button variant="outlined" sx={{marginLeft:"5px",textTransform: "capitalize",color:"white",backgroundColor:"#2F75E6",':hover':{color:"black"}}}>
-          Order Now <ArrowDropDownRoundedIcon/></Button>
+        <Box sx={{marginRight:"6px",display:'flex'}}>
+        <Box>
+        <Button variant="outlined" sx={{color:"#2F75E6",marginRight:"12px",textTransform: "capitalize",':hover':{backgroundColor:"#2F75E6" ,color:"white"}}}>Reservation</Button>
         </Box>
+       
+     <Box class="dropdown">
+     <Button  variant="contained" sx={{color:"white",marginRight:"5px",backgroundColor:"#2F75E6",height:"35px",textTransform: "capitalize",':hover':{backgroundColor:"white" ,color:"black"}}}>Order Now
+     <ArrowDropDownIcon sx={{color:"white",':hover':{color:"black"}}}/>
+     </Button>
+     <Box class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+     </Box>
+     </Box>
+        </Box>  
+       
        
       </Box>
       <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "100%" ,marginTop:"5px"}} />

@@ -22,19 +22,29 @@
   align-items: center;
   width: 100%;
   
+  
 }
 
 .rectangle {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  margin: 10px 0;
   
+  margin-left: 90px;
+  width: 100%;
+}
+.rectangle2{
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   margin: 10px 0;
   
   width: 100%;
+  margin-left: 70px;
 }
-
 .rectangletext {
+  
   color: white;
   padding-bottom: 10px;
   text-align: start;
@@ -42,17 +52,26 @@
 }
 
 .iconcolor {
+  margin-left: -9px;
   color: white;
   font-size: 22px;
-  margin-left: 20px;
+  margin-right: 20px;
   
+}
+.iconbtn{
+  margin-left: 0px;
+  display: flex;
+  width:200px;
+  justify-content: flex-start;
+  border: 1px solid rgba(123, 5, 5, 0);
+  background-color: rgba(217, 16, 16, 0);
 }
 
 .Thirdbox {
- 
+  
   color: white;
   font-size: 15px;
-  padding: 10px 0;
+ 
   width:87%;
 }
 
@@ -68,5 +87,17 @@
 
   .rectangle {
     width: 100%;
+    margin-left: 0px;
+    justify-content: center;
+    
   }
+  .rectangle2 {
+    
+    margin-left: 0px;
+   
+  }
+  .Thirdbox{
+    margin-right: 36px;
+  }
+  
 }

@@ -2,13 +2,13 @@ import React from 'react';
 import './Secondsectionstyle.scss';
 import Box from '@mui/material/Box';
 import { Typography, Grid ,Divider} from '@mui/material';
-import pic from '../asset/image.png';
+import pic from '../../asset/image.png';
 
 function Secondsection() {
   return (
     <Box className="mainbox">
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+      <Grid container spacing={2} >
+        <Grid item xs={12} sm={6} sx={{alignContent:"center",justifyContent:"center",alignItems:"center"}}>
           <img src={pic} className="image" alt="Jack Fruit Tacos" />
         </Grid>
 
@@ -29,7 +29,7 @@ function Secondsection() {
                 </Typography>
               </Grid>
             </Grid>
-            <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "80%" }}/>
+            <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "85%" }}/>
           </Box>
           
           <Box className="textbox" marginLeft={3}>
@@ -48,7 +48,7 @@ function Secondsection() {
                 </Typography>
               </Grid>
             </Grid>
-            <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "80%" }}/>
+            <Divider sx={{ my: 2, borderColor: 'grey', borderWidth: 0.5, width: "85%" }}/>
           </Box>
 
           <Box className="textbox" marginLeft={3}>
