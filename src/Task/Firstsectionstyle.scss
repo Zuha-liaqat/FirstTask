@@ -1,0 +1,28 @@
+.text {
+  margin-top: 20px;
+  padding: 20px 0;
+  text-align: center;
+
+}
+.border{
+  border:1px solid black;
+}
+.image4{
+  position: absolute;
+  right:-140px;
+  top:130px;
+  width:42%;
+  height:70vh;
+  
+  
+}
+
+@media (max-width: 600px) {
+  .text {
+    padding: 10px 0;
+  }
+
+  .firsttext {
+    font-size: 30px;
+  }
+}
