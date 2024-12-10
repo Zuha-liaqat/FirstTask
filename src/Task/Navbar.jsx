@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import {Button,Typography, IconButton,Divider} from '@mui/material';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
+import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded';
 import logo from '../asset/bird.png'; 
 import  './Navbarstyle.scss'
 
@@ -54,7 +55,8 @@ function Navbar() {
 
         <Box sx={{marginRight:"6px"}}>
         <Button variant="outlined" sx={{color:"#2F75E6",textTransform: "capitalize",':hover':{backgroundColor:"lightblue" ,color:"white"}}}>Reservation</Button>
-        <Button variant="outlined" sx={{marginLeft:"5px",textTransform: "capitalize",color:"white",backgroundColor:"#2F75E6",':hover':{color:"black"}}}>Order Now</Button>
+        <Button variant="outlined" sx={{marginLeft:"5px",textTransform: "capitalize",color:"white",backgroundColor:"#2F75E6",':hover':{color:"black"}}}>
+          Order Now <ArrowDropDownRoundedIcon/></Button>
         </Box>
        
       </Box>
