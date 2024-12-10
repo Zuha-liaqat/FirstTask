@@ -19,7 +19,7 @@ function Firstsection() {
               <Typography sx={{ fontSize:"14px", textAlign: 'center' ,color:"#2F75E6"}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor
                 consequat netus tristique at sem ipsum fames. Sed a molestie
-                enim ac sed.
+                enim 
               </Typography>
             </Grid>
             <Grid item xs={12} sm={10} md={0}>
